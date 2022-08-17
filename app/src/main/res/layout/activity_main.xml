@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/usuarioTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:textSize="30sp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/usuarioEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_login" />
+
+    <TextView
+        android:id="@+id/senhaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        android:textSize="30sp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/senhaEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/digite_sua_senha" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/realizarCadastroTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/realizar_cadastro"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            android:layout_marginTop="8sp"
+            android:layout_alignParentLeft="true"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/logarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logar"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

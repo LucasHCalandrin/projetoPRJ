@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">projetoPRJ</string>
+    <string name="logar">Logar</string>
+    <string name="sair">Sair</string>
+    <string name="digite_seu_login">Digite Seu Login</string>
+    <string name="senha">Senha</string>
+    <string name="usuario">Usuário</string>
+    <string name="digite_sua_senha">Digite Sua Senha</string>
+    <string name="realizar_cadastro">Realizar Cadastro</string>
+</resources>
