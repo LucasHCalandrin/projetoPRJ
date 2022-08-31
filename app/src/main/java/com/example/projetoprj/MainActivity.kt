@@ -3,7 +3,6 @@ package com.example.projetoprj
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.Toast
 import com.example.projetoprj.databinding.ActivityMainBinding
 
@@ -28,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             else{
                 Toast.makeText(this, "Usuário Não Encontrado !! \n Tente Novamente", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        amb.realizarCadastroTv.setOnClickListener {
+            val abrirTelaCadastro = Intent(this, NovoCadastro::class.java)
+            startActivity(abrirTelaCadastro)
         }
     }
 }
