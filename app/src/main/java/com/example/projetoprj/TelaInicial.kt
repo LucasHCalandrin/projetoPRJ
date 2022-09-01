@@ -19,5 +19,11 @@ class TelaInicial : AppCompatActivity() {
             val voltarLogin = Intent(this, MainActivity::class.java)
             startActivity(voltarLogin)
         }
+
+        atib.visualizarBtn.setOnClickListener {
+            val paginaProduto = Intent(this, TelaProduto::class.java)
+            startActivity(paginaProduto)
+        }
+
     }
 }

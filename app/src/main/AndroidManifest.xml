@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoPRJ">
         <activity
+            android:name=".TelaProduto"
+            android:exported="false" />
+        <activity
             android:name=".NovoCadastro"
             android:exported="false" />
         <activity
