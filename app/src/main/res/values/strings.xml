@@ -1,12 +1,25 @@
 <resources>
     <string name="app_name">projetoPRJ</string>
-    <string name="logar">Logar</string>
+    <string name="login">Login</string>
     <string name="sair">Sair</string>
-    <string name="digite_seu_login">Digite Seu Login</string>
+    <string name="voltar">Voltar</string>
     <string name="senha">Senha</string>
     <string name="usuario">Usuário</string>
     <string name="digite_sua_senha">Digite Sua Senha</string>
-    <string name="realizar_cadastro">Realizar Cadastro</string>
-    <string name="cadastrar_se">Cadastrar-se</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastro">Cadastro</string>
     <string name="tela_produto">Tela Produto</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="digite_seu_nome_completo">Digite Seu Nome Completo</string>
+    <string name="e_mail">E-mail</string>
+    <string name="digite_seu_e_mail">Digite Seu E-mail</string>
+    <string name="informacoes_pessoais">Informações Pessoais</string>
+    <string name="confirmacao_senha">Confirmação da senha</string>
+    <string name="digite_novamente_sua_senha">Digite Novamente Sua Senha</string>
+    <string name="endereco">Endereço</string>
+    <string name="cep">CEP</string>
+    <string name="digite_seu_cep">Digite Seu Cep</string>
+    <string name="rua">Rua</string>
+    <string name="perfil_usuario">Perfil do Usuário</string>
+    <string name="digite_nome_rua">Digite o Nome da Rua</string>
 </resources>

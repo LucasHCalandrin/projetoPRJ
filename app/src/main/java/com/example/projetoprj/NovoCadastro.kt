@@ -14,7 +14,7 @@ class NovoCadastro : AppCompatActivity() {
         ancb = ActivityNovoCadastroBinding.inflate(layoutInflater)
         setContentView(ancb.root)
 
-        ancb.sairBt.setOnClickListener {
+        ancb.voltarBtn.setOnClickListener {
             val voltarTelaLogin = Intent(this, MainActivity::class.java)
             startActivity(voltarTelaLogin)
         }

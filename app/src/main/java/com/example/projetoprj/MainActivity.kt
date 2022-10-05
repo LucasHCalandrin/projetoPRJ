@@ -15,13 +15,16 @@ class MainActivity : AppCompatActivity() {
         amb = ActivityMainBinding.inflate(layoutInflater)
         setContentView(amb.root)
 
+        supportActionBar?.hide();
+
+
         amb.logarBtn.setOnClickListener {
             
-            if(amb.usuarioEt.text.toString() == "lucas@email.com" && amb.senhaEt.text.toString() == "senha123"){
+            if(amb.emailEt.text.toString() == "lucas@email.com" && amb.senhaEt.text.toString() == "senha123"){
                 val logarTelaInicial = Intent(this, TelaInicial::class.java)
                 startActivity(logarTelaInicial)   
             }
-            else if (amb.usuarioEt.text.toString() == "" || amb.senhaEt.text.toString() == ""){
+            else if (amb.emailEt.text.toString() == "" || amb.senhaEt.text.toString() == ""){
                 Toast.makeText(this, "Digite Seu Usuário e Senha !!", Toast.LENGTH_SHORT).show()
             }
             else{
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        amb.realizarCadastroTv.setOnClickListener {
+        amb.cadastrarTv.setOnClickListener {
             val abrirTelaCadastro = Intent(this, NovoCadastro::class.java)
             startActivity(abrirTelaCadastro)
         }
