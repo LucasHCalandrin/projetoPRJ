@@ -13,9 +13,6 @@
     tools:context=".NovoCadastro">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -51,7 +48,60 @@
             <EditText
                 android:id="@+id/nomeCompletoEt"
                 style="@style/EditText_Cadastro"
+                android:inputType="textPersonName"
                 android:hint="@string/digite_seu_nome_completo" />
+
+            <TextView
+                android:id="@+id/dataNascimentoTv"
+                style="@style/TextViewCadastro"
+                android:text="@string/selecione_data_nascimento" />
+
+            <RelativeLayout
+                android:id="@+id/dataNascimentoRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dataNascimentoBt"
+                    style="@style/ButtonData"
+                    android:text="@string/data_nascimento"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/showDataTv"
+                    style="@style/TextViewCadastro"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:padding="10dp"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sexoTv"
+                style="@style/TextViewCadastro"
+                android:text="@string/sexo"/>
+
+            <RadioGroup
+                android:id="@+id/sexoRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/masculinoRb"
+                    style="@style/TextViewCadastro"
+                    android:text="@string/masculino"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/femininoRb"
+                    style="@style/TextViewCadastro"
+                    android:text="@string/feminino"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/emailTv"
@@ -61,7 +111,20 @@
             <EditText
                 android:id="@+id/emailEt"
                 style="@style/EditText_Cadastro"
+                android:inputType="textEmailAddress"
                 android:hint="@string/digite_seu_e_mail" />
+
+            <TextView
+                android:id="@+id/confirmacaoEmailTv"
+                style="@style/TextViewCadastro"
+                android:text="@string/confirmacao_email" />
+
+            <EditText
+                android:id="@+id/confrimacaoEmailEt"
+                style="@style/EditText_Cadastro"
+                android:inputType="textEmailAddress"
+                android:hint="@string/digite_novamente_email" />
+
 
             <TextView
                 android:id="@+id/passwTv"
@@ -71,6 +134,7 @@
             <EditText
                 android:id="@+id/passwEt"
                 style="@style/EditText_Cadastro"
+                android:inputType="textPassword"
                 android:hint="@string/digite_sua_senha" />
 
             <TextView
@@ -81,6 +145,7 @@
             <EditText
                 android:id="@+id/confirmacaoPasswEt"
                 style="@style/EditText_Cadastro"
+                android:inputType="textPassword"
                 android:hint="@string/digite_novamente_sua_senha" />
 
         </LinearLayout>
@@ -120,12 +185,31 @@
                 style="@style/EditText_Cadastro"
                 android:hint="@string/digite_nome_rua" />
 
+            <TextView
+                android:id="@+id/cidadeTv"
+                style="@style/TextViewCadastro"
+                android:text="@string/cidade" />
+
+            <EditText
+                android:id="@+id/cidadeEt"
+                style="@style/EditText_Cadastro"
+                android:hint="@string/digite_nome_cidade" />
+
+            <TextView
+                android:id="@+id/estadoTv"
+                style="@style/TextViewCadastro"
+                android:text="@string/estado" />
+
+            <EditText
+                android:id="@+id/estadoEt"
+                style="@style/EditText_Cadastro"
+                android:hint="@string/digite_nome_estado" />
+
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/voltarBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/ButtonCadastro"
             android:text="@string/voltar"
             app:layout_constraintTop_toBottomOf="@id/enderecoLl"
             app:layout_constraintBottom_toBottomOf="parent" />

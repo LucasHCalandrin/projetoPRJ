@@ -22,4 +22,15 @@
     <string name="rua">Rua</string>
     <string name="perfil_usuario">Perfil do Usuário</string>
     <string name="digite_nome_rua">Digite o Nome da Rua</string>
+    <string name="confirmacao_email">Confirmação do E-mail</string>
+    <string name="digite_novamente_email">Digite Novamente Seu E-mail</string>
+    <string name="data_nascimento">Data de Nascimento</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="selecione_data_nascimento">Selecione a Data de Nascimento</string>
+    <string name="cidade">Cidade</string>
+    <string name="digite_nome_cidade">Digite Nome da Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="digite_nome_estado">Digite Nome do Estado</string>
 </resources>
